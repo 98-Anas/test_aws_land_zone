@@ -1,5 +1,5 @@
 module "networking" {
-  source      = "../module/networking"
+  source      = "../modules/networking"
   prefix      = "poc-pre-prod"
   environment = "pre-prod"
   aws_region  = var.aws_region
@@ -7,7 +7,7 @@ module "networking" {
 }
 
 module "compute" {
-  source      = "../module/compute"
+  source      = "../modules/compute"
   prefix      = "poc-pre-prod"
   environment = "pre-prod"
   vpc_id      = module.networking.vpc_id
