@@ -8,16 +8,12 @@ on:
 
 
 jobs:
-  
   terraform:
-    name: Terraform
-    runs-on: self-hosted
-    environment: 
-      name: ${{ github.ref_name }}
+    runs-on: ubuntu-latest    
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
