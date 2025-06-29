@@ -1,4 +1,4 @@
-## AWS Landing Zone Terraform POC
+# AWS Landing Zone Terraform 
 
 ![AWS Landing Zone Architecture Diagram](diagrams/aws_landing_zone_architecture.png)
 
