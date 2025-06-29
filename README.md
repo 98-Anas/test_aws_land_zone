@@ -23,9 +23,7 @@ test_aws_land_zone/
 │   ├── architecture.py
 │   ├── aws_landing_zone_architecture.png
 │   ├── workflow.mermaid
-│   ├── workflow.mermaid:Zone.Identifier
-│   ├── workflow.png
-│   └── workflow.png:Zone.Identifier
+│   └── workflow.png
 ├── environments
 │   ├── outputs.tf
 │   ├── pre-prod
@@ -57,7 +55,7 @@ test_aws_land_zone/
 │       └── variables.tf
 └── remote_state_S3.sh
 
-9 directories, 30 files
+9 directories, 28 files
 ```
 
 ## CI/CD Workflow
