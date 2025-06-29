@@ -8,16 +8,12 @@ on:
 
 
 jobs:
-  
   terraform:
-    name: Terraform
-    runs-on: self-hosted
-    environment: 
-      name: ${{ github.ref_name }}
+    runs-on: ubuntu-latest    
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
@@ -32,7 +28,7 @@ jobs:
           terraform_version: 1.3.7
 
       - name: Terraform Init
-        run: terraform init -backend-config=../../backend.tf
+        run: terraform init 
 
       - name: Terraform Format
         run: terraform fmt -check
