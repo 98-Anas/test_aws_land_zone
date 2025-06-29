@@ -3,7 +3,6 @@ name: Terraform CI/CD
 on:
   pull_request:
     branches:
-      - main
       - pre-prod
 
 
