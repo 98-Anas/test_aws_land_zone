@@ -37,8 +37,8 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -var-file=environments/${{ github.ref_name }}/terraform.tfvars
+        run: terraform plan
 
       - name: Terraform Apply (pre-prod)
         if: github.ref == 'refs/heads/pre-prod'
-        run: terraform apply -var-file=environments/${{ github.ref_name }}/terraform.tfvars
+        run: terraform apply
