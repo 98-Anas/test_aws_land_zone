@@ -40,5 +40,4 @@ jobs:
         run: terraform plan
 
       - name: Terraform Apply (pre-prod)
-        if: github.ref == 'refs/heads/pre-prod'
         run: terraform apply
